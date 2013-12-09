@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Website is Up{% endblock %}
+{% block content %}
+<h2>It's just you. The website <a href="{{ pagina }}">{{ pagina }}</a> is up.</h2>
+
+<br><br><br>
+<h3><a href="{% url "home" %}">Check another site?</a></h3>
+{% endblock %}
+
+

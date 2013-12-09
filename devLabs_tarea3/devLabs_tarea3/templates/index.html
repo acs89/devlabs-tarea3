@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Is the website down?{% endblock %}
+{% block content %}
+
+<h1>Check to see if a website is down or if it's just you</h1>
+<br>
+{% if errors %}
+   <div class="error">
+   {% for error in errors %}
+      {{ error }}
+   {% endfor %}
+   </div>
+{% endif %}
+<br>
+<form action="/search/" method="get">
+   <input type="text" name="url">
+   <input type="submit" value="Check" class="myButton">
+</form>
+{% endblock %}
+   
+   

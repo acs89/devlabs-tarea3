@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html lang="en">
+<head>
+{% load staticfiles %}
+
+<link rel="stylesheet" href="{% static 'tarea3/style.css' %}">
+
+<title>{% block title %}{% endblock %}</title>
+
+</head>
+<body>
+<div id ="wrapper">
+
+   <center>
+   <img src="{% static "tarea3/checkit.png" %}" alt="Check it!"/>
+   {% block content %}{% endblock %}    
+   </center>
+   
+
+  <div id="footer">
+   Andrea Salcedo - andreacsalcedo@gmail.com - 10-10666
+  </div>
+   
+   </div>
+</body>
+</html>
+
